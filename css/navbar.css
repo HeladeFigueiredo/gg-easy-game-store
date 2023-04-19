@@ -1,0 +1,90 @@
+.navbar {
+    background-color: black;
+}
+
+#cabecalho h1 {
+    font-size: 25px;
+}
+
+#menu-navegacao a  {
+    font-size: 19px;
+}
+
+#menu-navegacao .nav .nav-link.active {
+    background-color: red;
+    border-bottom: 3px solid black;
+    border-radius: 6px;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+#menu-navegacao .nav .nav-link.active:hover {
+    background-color: red;
+    color: #fff;
+}
+
+#cabecalho .nav-link:hover {
+    color: red;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+#carro-sm {
+    display: none;
+}
+
+/* VISÃO MOBILE  */
+@media (max-width: 767px) {
+    #carro-lg {
+        display: none;
+    }
+
+    #carro-sm {
+        display: block;
+    }
+
+    .carousel {
+        display: none;
+    }
+    
+    .navbar {
+        border-bottom: 1px solid white;
+        padding-bottom: 10px !important;
+    }
+    
+    .container {
+        width: 100% !important;
+    }
+}
+
+
+/* VISÃO TABLET */
+@media (max-width: 992px) {
+    #carro-lg {
+        display: none;
+    }
+    
+    #carro-sm {
+        display: block;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .navbar {
+        border-bottom: 1px solid white;
+        padding-bottom: 10px !important;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+}

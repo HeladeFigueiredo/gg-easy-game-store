@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/jogos.css">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/fale-conosco.css">
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 title">GG Easy Game Store</h1>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-lg-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jogos">
+                                O que você vai jogar?
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#produtos">
+                                Nossos produtos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fale-conosco">
+                                Fale conosco
+                            </a>
+                        </li>
+                        <li class="nav-item" id="carro-sm">
+                            <a class="nav-link pt-0 pb-0" href="#carrinho">
+                                <i class="bi bi-cart-check fs-3"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+            <ul class="nav nav-pills d-block d-md-flex">
+                <li class="nav-item" id="carro-lg">
+                    <a class="nav-link pt-0 pb-0" href="#carrinho">
+                        <i class="bi bi-cart-check fs-3"></i>
+                    </a>
+                </li>
+            </ul>
+    </header>
+
+
+
+    <!-- CAROUSEL DE IMAGENS  -->
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="carousel">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000" >
+                        <img src="./imagens/carousel/carousel1.jpg" alt="Banner promoção páscoa gamer">
+                    </div>
+    
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/carousel/carousel2.jpg" alt="Banner promoção home office">
+                    </div>
+    
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/carousel/carousel3.jpg" alt="Banner promoção páscoa gamer">
+                    </div>
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+    
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+    
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    <!-- VAI JOGAR O QUE? JOGOS -->
+
+        <section id="jogos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title text-center mt-2 mb-2">O que você vai jogar?</h2> 
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 mt-4">
+                        <img src="./imagens/jogos/jogo1.jpg" alt="GTA V " class="d-block w-100 rounded mb-2">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 mt-4">
+                        <img src="./imagens/jogos/jogo2.jpg" alt="Fortnite" class="d-block w-100 rounded mb-2">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 mt-4">
+                        <img src="./imagens/jogos/jogo3.jpg" alt="League of Legends" class="d-block w-100 rounded mb-2">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 mt-4">
+                        <img src="./imagens/jogos/jogo4.jpg" alt="Dota 2" class="d-block w-100 rounded mb-2">
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 mt-4">
+                        <img src="./imagens/jogos/jogo5.jpg" alt="CS GO" class="d-block w-100 rounded mb-2">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 mt-4">
+                        <img src="./imagens/jogos/jogo6.jpg" alt="Minecraft" class="d-block w-100 rounded mb-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- PRODUTOS -->
+
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title text-center mb-4">Nossos produtos</h2>
+                </div>
+
+                <div class="row">
+
+                    <!-- BARRA LATERAL  -->
+                    <aside class="col-sm-12 col-md-12 col-lg-2">
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#gabinetes" class="text-start nav-link active">Gabinetes</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#monitores" class="text-start nav-link">Monitor</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#teclados" class="text-start nav-link">Teclados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mouses" class="text-start nav-link">Mouse</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fones" class="text-start nav-link">Headseat</button>
+                        </nav>
+                    </aside>
+                    
+
+                    <div class="col-lg-10">
+                        <div class="tab-content">
+
+                            <!-- GABINETES -->
+                            <div class="tab-pane active" id="gabinetes">
+                                <div class="row">
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete1.jpg" alt="Coca-Cola">
+                                        <h5 class="mt-2">PC Gamer Intel i3 12100F</h5>
+                                        <p>4.673,98</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete2.jpg" alt="Suco">
+                                        <h5 class="mt-2">Pc Gamer AMD Ryzen 3 3200G</h5>
+                                        <p>1.789,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete1.jpg" alt="Coca-Cola">
+                                        <h5 class="mt-2">PC Gamer Intel i3 12100F</h5>
+                                        <p>4.673,98</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete2.jpg" alt="Suco">
+                                        <h5 class="mt-2">Pc Gamer AMD Ryzen 3 3200G</h5>
+                                        <p>1.789,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete2.jpg" alt="Suco">
+                                        <h5 class="mt-2">Pc Gamer AMD Ryzen 3 3200G</h5>
+                                        <p>1.789,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete1.jpg" alt="Coca-Cola">
+                                        <h5 class="mt-2">PC Gamer Intel i3 12100F</h5>
+                                        <p>4.673,98</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete1.jpg" alt="Coca-Cola">
+                                        <h5 class="mt-2">PC Gamer Intel i3 12100F</h5>
+                                        <p>4.673,98</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete2.jpg" alt="Suco">
+                                        <h5 class="mt-2">Pc Gamer AMD Ryzen 3 3200G</h5>
+                                        <p>1.789,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete1.jpg" alt="Coca-Cola">
+                                        <h5 class="mt-2">PC Gamer Intel i3 12100F</h5>
+                                        <p>4.673,98</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete2.jpg" alt="Suco">
+                                        <h5 class="mt-2">Pc Gamer AMD Ryzen 3 3200G</h5>
+                                        <p>1.789,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete2.jpg" alt="Suco">
+                                        <h5 class="mt-2">Pc Gamer AMD Ryzen 3 3200G</h5>
+                                        <p>1.789,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/gabinete/gabinete1.jpg" alt="Coca-Cola">
+                                        <h5 class="mt-2">PC Gamer Intel i3 12100F</h5>
+                                        <p>4.673,98</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- MONITORES -->
+
+                            <div class="tab-pane" id="monitores">
+                                <div class="row">
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor1.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer Viper Full HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor2.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer Acer Full HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor3.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer LG Led Full</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor4.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer Zowie 144Hz</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor5.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer 144Hz Full HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor2.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer 60Hz Led HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor1.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer Viper Full HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor2.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer Acer Full HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor3.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer LG Led Full</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor4.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer Zowie 144Hz</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor5.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer 144Hz Full HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/monitor/monitor2.jpg" alt="Monitor">
+                                        <h5 class="mt-2">Monitor Gamer 60Hz Led HD</h5>
+                                        <p>1.535,89</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- TECLADOS -->
+
+                            <div class="tab-pane" id="teclados">
+                                <div class="row">
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado1.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Rainbow</h5>
+                                        <p>162,76</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado2.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Cruiser</h5>
+                                        <p>229,07</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado3.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Grev</h5>
+                                        <p>130,21</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado3.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Fortrek</h5>
+                                        <p>99,91</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado1.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Hawk</h5>
+                                        <p>53,06</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado2.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Switch</h5>
+                                        <p>162,76</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado1.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Rainbow</h5>
+                                        <p>162,76</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado2.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Cruiser</h5>
+                                        <p>229,07</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado3.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Grev</h5>
+                                        <p>130,21</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado3.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Fortrek</h5>
+                                        <p>99,91</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado1.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Hawk</h5>
+                                        <p>53,06</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img src="./imagens/produtos/teclado/teclado2.jpg" alt="Teclado">
+                                        <h5 class="mt-2">Teclado Gamer Switch</h5>
+                                        <p>162,76</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- MOUSES -->
+
+                            <div class="tab-pane" id="mouses">
+                                <div class="row">
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse1.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer MO-YA37</h5>
+                                        <p>119,36</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse2.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Motospeed</h5>
+                                        <p>58,75</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse3.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Essential</h5>
+                                        <p>34,97</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse4.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Trust</h5>
+                                        <p>25,33</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse5.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer GXT783</h5>
+                                        <p>525,65</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse6.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Vinik</h5>
+                                        <p>243,54</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse1.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer MO-YA37</h5>
+                                        <p>119,36</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse2.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Motospeed</h5>
+                                        <p>58,75</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse3.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Essential</h5>
+                                        <p>34,97</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse4.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Trust</h5>
+                                        <p>25,33</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse5.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer GXT783</h5>
+                                        <p>525,65</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-4" src="./imagens/produtos/mouse/mouse6.jpg" alt="Mouse">
+                                        <h5 class="mt-2">Mouse Gamer Vinik</h5>
+                                        <p>243,54</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- FONES -->
+
+                            <div class="tab-pane" id="fones">
+                                <div class="row">
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone1.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer EG-301R </h5>
+                                        <p>162,76</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone2.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Evolut</h5>
+                                        <p>49,90</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone3.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Têmis</h5>
+                                        <p>39,91</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone4.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Kross</h5>
+                                        <p>119,26</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone3.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Khareus</h5>
+                                        <p>229,07</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone1.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer KE-HS098</h5>
+                                        <p>103,69</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone1.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer EG-301R </h5>
+                                        <p>162,76</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone2.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Evolut</h5>
+                                        <p>49,90</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone3.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Têmis</h5>
+                                        <p>39,91</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone4.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Kross</h5>
+                                        <p>119,26</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone3.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer Khareus</h5>
+                                        <p>229,07</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center blur">
+                                        <img class="mb-3" src="./imagens/produtos/fone/fone1.jpg" alt="Fone">
+                                        <h5 class="mt-2">Headset Gamer KE-HS098</h5>
+                                        <p>103,69</p>
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FALE CONOSCO -->
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title text-center mb-4">Fale conosco</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7 col-12 mb-5">
+                        <form>
+                            <div class="mb-4 card-input">
+                                <label class="form-label" for="nome">Seu nome:</label>
+                                <input class="form-control" type="text" id="nome" required>
+                            </div>
+                            <div class="mb-4 card-input">
+                                <label class="form-label" for="email">Seu e-mail:</label>
+                                <input class="form-control" type="email" id="email" required>
+                            </div>
+                            <div class="mb-4 card-input">
+                                <label class="form-label" for="telefone">Seu telefone (opcional):</label>
+                                <input class="form-control" type="tel" id="telefone">
+                            </div>
+                            <div class="mb-4 card-input">
+                                <label class="form-label" for="mensagem">Sua mensagem:</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+
+                            <button class="btn fw-bold mt-2" type="submit">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5 col-12">
+                        <div class="row mt-3">
+                            <h3 class="title">
+                                <i class="bi bi-telephone me-1 icon"></i>
+                                Redes sociais
+                            </h3>
+
+                            <ul class="social-links ms-4">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-facebook icons"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4 ms-3 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-instagram icons"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp icons"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-envelope icons"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="title text-colored">
+                                <i class="bi bi-cursor-fill me-1 icon"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua Teste Exemplo n° 145, Bairro Bootstrap - São Paulo - SP</p>
+                            <p>Caixa Postal: 84593-843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

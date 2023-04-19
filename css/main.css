@@ -1,0 +1,18 @@
+/* GERAL  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTE TÍTULOS */
+.title { 
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+}
+
+/* FONTE USUAL */
+body {
+    font-family: 'Doppio One', sans-serif;
+    background-color: rgba(0, 0, 0);
+}
